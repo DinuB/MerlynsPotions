@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Merlyn's Potions</title>
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/content.css">
+  <link rel="stylesheet" href="src/css/footer.css">
+  <link rel="stylesheet" href="src/css/lightbox.css">
+  <link rel="stylesheet" href="src/fonts/fontawesome/css/all.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"> -->
+
+</head>
+<body>
+
+<!-- header -->
+<header>
+
+  <div class="headerUp">
+    <button class="buttonMenu cursor" name="button">
+      <i  id="mobileMenu" class="fas fa-bars" onclick="changeIcon()"></i>
+    </button>
+
+
+    <div id="logo" class="">
+      <img src="src/assets/logo.png" alt="">
+    </div>
+
+    <div id="search" class="hide">
+      <div class="searchBar">
+        <i class="fas fa-search"></i>
+        <input type="text" name="" placeholder="Search our stock">
+      </div>
+    </div>
+
+    <div id="promo1" class="hide">
+      <span class="textUp">Free Shipping</span>
+      <span class="textDown">on orders over 50$</span>
+    </div>
+
+    <div id="cart" class="">
+      <img src="src/assets/cart.png" alt="">
+      <div class="cartText">
+        <span class="cartTitle">BAG: </span>
+        <span id="bag" class="cartItem">0</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="promo">
+    <span>Free Shipping on orders over 50$</span>
+  </div>
+
+  <div id="nav" class="hide">
+    <div class="navbar">
+
+      <div class="menu">
+
+        <div class="dropdown">
+          <button class="dropbtn cursor">Potions
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Potion 1</a>
+            <a href="#">Potion 2</a>
+            <a href="#">Potion 3</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn cursor">Ingredients
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Ingredient 1</a>
+            <a href="#">Ingredient 2</a>
+            <a href="#">Ingredient 3</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn cursor">Books
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Book 1</a>
+            <a href="#">Book 2</a>
+            <a href="#">Book 3</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn cursor">Supplies
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Supply 1</a>
+            <a href="#">Supply 2</a>
+            <a href="#">Supply 3</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn cursor">Charms
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Charm 1</a>
+            <a href="#">Charm 2</a>
+            <a href="#">Charm 3</a>
+          </div>
+        </div>
+
+        <a href="#" class="active">Clearance!</a>
+      </div>
+
+      <div class="login">
+        <a href="#">Sign In</a>
+        <span class="or"> or </span>
+        <a href="#">Sign Out</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<!-- content -->
+
+<div class="content">
+
+<h2>Potions: </h2>
+
+  <!-- potions -->
+  <div id="products" class="potions">
+
+  </div>
+
+</div>
+
+
+<!-- footer -->
+
+<footer>
+ <div class="footer">
+   <div class="newsletter">
+     <div class="text">
+       <span class="textTitle">Newsletter</span>
+       <span class="textDesc">Sign up for our newsletter & get exclusive discounts</span>
+     </div>
+     <div class="subscribe">
+       <input class="email" type="text" name="" placeholder="Enter your email" value="">
+       <input class="button cursor" type="submit" name="" value="Submit" onclick="mailAlert();">
+     </div>
+   </div>
+
+   <div class="contact">
+    <div class="contacts">
+      <a href="#">Company Returns</a>
+      <a href="#">Contact Us Carrers</a>
+      <a href="#">Shipping</a>
+    </div>
+
+    <div class="social">
+      <a href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-pinterest-p"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-tumblr"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-google-plus-g"></i>
+      </a>
+    </div>
+
+    <div class="copyright">
+      <span>&#169; 2015 Merlyn's Potions. All rights reserved</span>
+    </div>
+
+  </div>
+ </div>
+</footer>
+
+<div id="lightbox" class="">
+
+</div>
+
+<!-- JavaScript -->
+<script type="text/javascript" src="src/js/header.js"></script>
+<script type="text/javascript" src="src/js/products.js"></script>
+
+<script type="text/javascript">
+  function mailAlert(){
+    alert('Mail Sended')
+  }
+
+</script>
+
+
+</body>
+</html>
