@@ -58,7 +58,7 @@ function openLightbox(component) {
               <h3>Ingredients: </h3>
               <p>${descProduct.ingredients.join("<br>")}</p>
               <h3>Price: </h3>
-              <p>${descProduct.price}</p>
+              <p class="potionPrice">${descProduct.price}</p>
 
               <input onclick="addProduto()" class="button cursor" type="submit" name="" value="ADD TO CART">
             </div>
