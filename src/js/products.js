@@ -121,7 +121,8 @@ function openLightbox(component) {
 
      var id = component.getAttribute("data-id");
 
-     var descProduct = products.potions[id];
+     // var descProduct = products.potions[id];
+     var descProduct = products[id];
 
      box.innerHTML =
      `
