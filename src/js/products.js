@@ -94,7 +94,8 @@ var products = {
 
 // lISTAGEM DE PRODUTOS
 function listaProdutos(){
-  var potion = products.potions;
+  // var potion = products.potions;
+  var potion = products;
 
   for (var key in potion){
     console.log('ID: ' + potion[key].id + '; Potion: ' + potion[key].name + '; Efect: ' + potion[key].effect + '.');
